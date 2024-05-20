@@ -38,14 +38,6 @@ exports.handler = async (e, t) => {
       p = c.length;
     if (!shouldCompress(l, p, d))
       return (
-let fetch;
-(async () => {
-  fetch = await import('node-fetch').then(module => module.default);
-})();
-let fetch;
-(async () => {
-  fetch = await import('node-fetch').then(module => module.default);
-})();
         console.log("Bypassing... Size: ", c.length),
         {
           statusCode: 200,
