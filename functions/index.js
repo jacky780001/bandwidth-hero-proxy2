@@ -1,12 +1,8 @@
 const pick = require("../util/pick"),
+  fetch = require("node-fetch"),
   shouldCompress = require("../util/shouldCompress"),
   compress = require("../util/compress"),
   DEFAULT_QUALITY = 40;
-
-let fetch;
-(async () => {
-  fetch = await import('node-fetch').then(module => module.default);
-})();
 
 exports.handler = async (e, t) => {
   let { url: r } = e.queryStringParameters,
@@ -42,10 +38,7 @@ exports.handler = async (e, t) => {
       p = c.length;
     if (!shouldCompress(l, p, d))
       return (
-let fetch;
-(async () => {
-  fetch = await import('node-fetch').then(module => module.default);
-})();
+
         console.log("Bypassing... Size: ", c.length),
         {
           statusCode: 200,
